@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		269D67B81D649ACF00126A80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 269D67B71D649ACF00126A80 /* main.m */; };
+		269D67BB1D649ACF00126A80 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 269D67BA1D649ACF00126A80 /* AppDelegate.m */; };
+		269D67BE1D649ACF00126A80 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 269D67BD1D649ACF00126A80 /* ViewController.m */; };
+		269D67C11D649ACF00126A80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269D67BF1D649ACF00126A80 /* Main.storyboard */; };
+		269D67C31D649ACF00126A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 269D67C21D649ACF00126A80 /* Assets.xcassets */; };
+		269D67C61D649ACF00126A80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269D67C41D649ACF00126A80 /* LaunchScreen.storyboard */; };
+		269D67D11D649ACF00126A80 /* HKClipperDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 269D67D01D649ACF00126A80 /* HKClipperDemoTests.m */; };
+		269D67DC1D649ACF00126A80 /* HKClipperDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 269D67DB1D649ACF00126A80 /* HKClipperDemoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		269D67CD1D649ACF00126A80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 269D67AB1D649ACE00126A80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 269D67B21D649ACF00126A80;
+			remoteInfo = HKClipperDemo;
+		};
+		269D67D81D649ACF00126A80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 269D67AB1D649ACE00126A80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 269D67B21D649ACF00126A80;
+			remoteInfo = HKClipperDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		269D67B31D649ACF00126A80 /* HKClipperDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HKClipperDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		269D67B71D649ACF00126A80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		269D67B91D649ACF00126A80 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		269D67BA1D649ACF00126A80 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		269D67BC1D649ACF00126A80 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		269D67BD1D649ACF00126A80 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		269D67C01D649ACF00126A80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		269D67C21D649ACF00126A80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		269D67C51D649ACF00126A80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		269D67C71D649ACF00126A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		269D67CC1D649ACF00126A80 /* HKClipperDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HKClipperDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		269D67D01D649ACF00126A80 /* HKClipperDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKClipperDemoTests.m; sourceTree = "<group>"; };
+		269D67D21D649ACF00126A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		269D67D71D649ACF00126A80 /* HKClipperDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HKClipperDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		269D67DB1D649ACF00126A80 /* HKClipperDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKClipperDemoUITests.m; sourceTree = "<group>"; };
+		269D67DD1D649ACF00126A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		269D67B01D649ACF00126A80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		269D67C91D649ACF00126A80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		269D67D41D649ACF00126A80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		269D67AA1D649ACE00126A80 = {
+			isa = PBXGroup;
+			children = (
+				269D67B51D649ACF00126A80 /* HKClipperDemo */,
+				269D67CF1D649ACF00126A80 /* HKClipperDemoTests */,
+				269D67DA1D649ACF00126A80 /* HKClipperDemoUITests */,
+				269D67B41D649ACF00126A80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		269D67B41D649ACF00126A80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				269D67B31D649ACF00126A80 /* HKClipperDemo.app */,
+				269D67CC1D649ACF00126A80 /* HKClipperDemoTests.xctest */,
+				269D67D71D649ACF00126A80 /* HKClipperDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		269D67B51D649ACF00126A80 /* HKClipperDemo */ = {
+			isa = PBXGroup;
+			children = (
+				269D67B91D649ACF00126A80 /* AppDelegate.h */,
+				269D67BA1D649ACF00126A80 /* AppDelegate.m */,
+				269D67BC1D649ACF00126A80 /* ViewController.h */,
+				269D67BD1D649ACF00126A80 /* ViewController.m */,
+				269D67BF1D649ACF00126A80 /* Main.storyboard */,
+				269D67C21D649ACF00126A80 /* Assets.xcassets */,
+				269D67C41D649ACF00126A80 /* LaunchScreen.storyboard */,
+				269D67C71D649ACF00126A80 /* Info.plist */,
+				269D67B61D649ACF00126A80 /* Supporting Files */,
+			);
+			path = HKClipperDemo;
+			sourceTree = "<group>";
+		};
+		269D67B61D649ACF00126A80 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				269D67B71D649ACF00126A80 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		269D67CF1D649ACF00126A80 /* HKClipperDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				269D67D01D649ACF00126A80 /* HKClipperDemoTests.m */,
+				269D67D21D649ACF00126A80 /* Info.plist */,
+			);
+			path = HKClipperDemoTests;
+			sourceTree = "<group>";
+		};
+		269D67DA1D649ACF00126A80 /* HKClipperDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				269D67DB1D649ACF00126A80 /* HKClipperDemoUITests.m */,
+				269D67DD1D649ACF00126A80 /* Info.plist */,
+			);
+			path = HKClipperDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		269D67B21D649ACF00126A80 /* HKClipperDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 269D67E01D649ACF00126A80 /* Build configuration list for PBXNativeTarget "HKClipperDemo" */;
+			buildPhases = (
+				269D67AF1D649ACF00126A80 /* Sources */,
+				269D67B01D649ACF00126A80 /* Frameworks */,
+				269D67B11D649ACF00126A80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HKClipperDemo;
+			productName = HKClipperDemo;
+			productReference = 269D67B31D649ACF00126A80 /* HKClipperDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		269D67CB1D649ACF00126A80 /* HKClipperDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 269D67E31D649ACF00126A80 /* Build configuration list for PBXNativeTarget "HKClipperDemoTests" */;
+			buildPhases = (
+				269D67C81D649ACF00126A80 /* Sources */,
+				269D67C91D649ACF00126A80 /* Frameworks */,
+				269D67CA1D649ACF00126A80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				269D67CE1D649ACF00126A80 /* PBXTargetDependency */,
+			);
+			name = HKClipperDemoTests;
+			productName = HKClipperDemoTests;
+			productReference = 269D67CC1D649ACF00126A80 /* HKClipperDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		269D67D61D649ACF00126A80 /* HKClipperDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 269D67E61D649ACF00126A80 /* Build configuration list for PBXNativeTarget "HKClipperDemoUITests" */;
+			buildPhases = (
+				269D67D31D649ACF00126A80 /* Sources */,
+				269D67D41D649ACF00126A80 /* Frameworks */,
+				269D67D51D649ACF00126A80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				269D67D91D649ACF00126A80 /* PBXTargetDependency */,
+			);
+			name = HKClipperDemoUITests;
+			productName = HKClipperDemoUITests;
+			productReference = 269D67D71D649ACF00126A80 /* HKClipperDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		269D67AB1D649ACE00126A80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = hukaiyin;
+				TargetAttributes = {
+					269D67B21D649ACF00126A80 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					269D67CB1D649ACF00126A80 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 269D67B21D649ACF00126A80;
+					};
+					269D67D61D649ACF00126A80 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 269D67B21D649ACF00126A80;
+					};
+				};
+			};
+			buildConfigurationList = 269D67AE1D649ACF00126A80 /* Build configuration list for PBXProject "HKClipperDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 269D67AA1D649ACE00126A80;
+			productRefGroup = 269D67B41D649ACF00126A80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				269D67B21D649ACF00126A80 /* HKClipperDemo */,
+				269D67CB1D649ACF00126A80 /* HKClipperDemoTests */,
+				269D67D61D649ACF00126A80 /* HKClipperDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		269D67B11D649ACF00126A80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				269D67C61D649ACF00126A80 /* LaunchScreen.storyboard in Resources */,
+				269D67C31D649ACF00126A80 /* Assets.xcassets in Resources */,
+				269D67C11D649ACF00126A80 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		269D67CA1D649ACF00126A80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		269D67D51D649ACF00126A80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		269D67AF1D649ACF00126A80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				269D67BE1D649ACF00126A80 /* ViewController.m in Sources */,
+				269D67BB1D649ACF00126A80 /* AppDelegate.m in Sources */,
+				269D67B81D649ACF00126A80 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		269D67C81D649ACF00126A80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				269D67D11D649ACF00126A80 /* HKClipperDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		269D67D31D649ACF00126A80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				269D67DC1D649ACF00126A80 /* HKClipperDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		269D67CE1D649ACF00126A80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 269D67B21D649ACF00126A80 /* HKClipperDemo */;
+			targetProxy = 269D67CD1D649ACF00126A80 /* PBXContainerItemProxy */;
+		};
+		269D67D91D649ACF00126A80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 269D67B21D649ACF00126A80 /* HKClipperDemo */;
+			targetProxy = 269D67D81D649ACF00126A80 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		269D67BF1D649ACF00126A80 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				269D67C01D649ACF00126A80 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		269D67C41D649ACF00126A80 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				269D67C51D649ACF00126A80 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		269D67DE1D649ACF00126A80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		269D67DF1D649ACF00126A80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		269D67E11D649ACF00126A80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HKClipperDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.practice.HKClipperDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		269D67E21D649ACF00126A80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HKClipperDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.practice.HKClipperDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		269D67E41D649ACF00126A80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HKClipperDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.practice.HKClipperDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HKClipperDemo.app/HKClipperDemo";
+			};
+			name = Debug;
+		};
+		269D67E51D649ACF00126A80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HKClipperDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.practice.HKClipperDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HKClipperDemo.app/HKClipperDemo";
+			};
+			name = Release;
+		};
+		269D67E71D649ACF00126A80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HKClipperDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.practice.HKClipperDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HKClipperDemo;
+			};
+			name = Debug;
+		};
+		269D67E81D649ACF00126A80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HKClipperDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.practice.HKClipperDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HKClipperDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		269D67AE1D649ACF00126A80 /* Build configuration list for PBXProject "HKClipperDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				269D67DE1D649ACF00126A80 /* Debug */,
+				269D67DF1D649ACF00126A80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		269D67E01D649ACF00126A80 /* Build configuration list for PBXNativeTarget "HKClipperDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				269D67E11D649ACF00126A80 /* Debug */,
+				269D67E21D649ACF00126A80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		269D67E31D649ACF00126A80 /* Build configuration list for PBXNativeTarget "HKClipperDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				269D67E41D649ACF00126A80 /* Debug */,
+				269D67E51D649ACF00126A80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		269D67E61D649ACF00126A80 /* Build configuration list for PBXNativeTarget "HKClipperDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				269D67E71D649ACF00126A80 /* Debug */,
+				269D67E81D649ACF00126A80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 269D67AB1D649ACE00126A80 /* Project object */;
+}
