@@ -1,25 +1,111 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7dl-yK-UbR">
+                                <rect key="frame" x="40" y="220" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="X5d-M1-Wke"/>
+                                    <constraint firstAttribute="width" constant="240" id="qbZ-Bp-hAd"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="keW-oC-E8d">
+                                <rect key="frame" x="56" y="42" width="208" height="96"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cR-qn-AP6">
+                                        <rect key="frame" x="108" y="0.0" width="100" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="SqA-Em-dF6"/>
+                                            <constraint firstAttribute="height" constant="40" id="iok-Sa-7pm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="系统裁剪"/>
+                                        <connections>
+                                            <action selector="systemTUI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vbL-Z9-PNE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MW3-G6-z8t">
+                                        <rect key="frame" x="108" y="56" width="100" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="bIJ-j8-n89"/>
+                                            <constraint firstAttribute="width" constant="100" id="wI3-qh-611"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="裁剪框可移动"/>
+                                        <connections>
+                                            <action selector="clipperTUI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LW3-yb-Hcv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xyb-rM-EuO">
+                                        <rect key="frame" x="0.0" y="56" width="100" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Bh1-Ci-98o"/>
+                                            <constraint firstAttribute="width" constant="100" id="kNd-bo-CCG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="图片可移动"/>
+                                        <connections>
+                                            <action selector="imageTUI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CJX-dB-o1t"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvp-4a-V8B">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Ggg-kk-Rfu"/>
+                                            <constraint firstAttribute="width" constant="100" id="M5q-tw-RpI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="系统不裁剪"/>
+                                        <connections>
+                                            <action selector="systemDontClipTUI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uRy-NO-hea"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="GGN-1M-6wz"/>
+                                    <constraint firstItem="gvp-4a-V8B" firstAttribute="top" secondItem="keW-oC-E8d" secondAttribute="top" id="N3R-Wd-TA8"/>
+                                    <constraint firstItem="3cR-qn-AP6" firstAttribute="top" secondItem="keW-oC-E8d" secondAttribute="top" id="Q4V-Jg-nvz"/>
+                                    <constraint firstItem="MW3-G6-z8t" firstAttribute="leading" secondItem="Xyb-rM-EuO" secondAttribute="trailing" constant="8" id="UKa-r3-2aP"/>
+                                    <constraint firstItem="Xyb-rM-EuO" firstAttribute="top" secondItem="gvp-4a-V8B" secondAttribute="bottom" constant="16" id="WLf-tg-2VG"/>
+                                    <constraint firstItem="gvp-4a-V8B" firstAttribute="leading" secondItem="keW-oC-E8d" secondAttribute="leading" id="XMh-TQ-QDk"/>
+                                    <constraint firstItem="Xyb-rM-EuO" firstAttribute="leading" secondItem="keW-oC-E8d" secondAttribute="leading" id="ZPV-Sb-f74"/>
+                                    <constraint firstItem="MW3-G6-z8t" firstAttribute="top" secondItem="3cR-qn-AP6" secondAttribute="bottom" constant="16" id="e8a-QG-6sL"/>
+                                    <constraint firstItem="3cR-qn-AP6" firstAttribute="leading" secondItem="gvp-4a-V8B" secondAttribute="trailing" constant="8" id="nrk-3s-khx"/>
+                                    <constraint firstAttribute="width" constant="208" id="wvW-3B-Sdi"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="keW-oC-E8d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="73k-Ko-Dfq"/>
+                            <constraint firstItem="7dl-yK-UbR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OFg-Zv-3bI"/>
+                            <constraint firstItem="7dl-yK-UbR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="o36-7v-eZP"/>
+                            <constraint firstItem="keW-oC-E8d" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="sJf-EM-dRr"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="clippedImageView" destination="7dl-yK-UbR" id="srx-NN-DYD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24" y="337"/>
         </scene>
     </scenes>
 </document>
