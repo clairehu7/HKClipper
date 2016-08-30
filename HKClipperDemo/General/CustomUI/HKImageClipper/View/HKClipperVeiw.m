@@ -7,7 +7,6 @@
 //
 
 #import "HKClipperVeiw.h"
-#import "HKViewMarco.h"
 #import "UIImage+Extends.h"
 
 static const CGFloat minWidth = 60;
@@ -165,8 +164,8 @@ static const CGFloat minWidth = 60;
     if (width < minWidth) {
         width = minWidth;
     }
-    if (width > kScreenWidth) {
-        width = kScreenWidth;
+    if (width > [UIScreen mainScreen].bounds.size.width) {
+        width = [UIScreen mainScreen].bounds.size.width;
     }
     height = width/self.resultImgSize.width * self.resultImgSize.height;
     
@@ -175,14 +174,14 @@ static const CGFloat minWidth = 60;
     if (x < 0) {
         x = 0;
     }
-    if(x  > kScreenWidth - width){
-        x = kScreenWidth - width;
+    if(x  > [UIScreen mainScreen].bounds.size.width - width){
+        x = [UIScreen mainScreen].bounds.size.width - width;
     }
     if (y < 0) {
         y = 0;
     }
-    if(y > kScreenHeight - height - 64){
-        y =kScreenHeight - height - 64;
+    if(y > [UIScreen mainScreen].bounds.size.height - height - 64){
+        y =[UIScreen mainScreen].bounds.size.height - height - 64;
     }
     
     self.clipperView.frame = CGRectMake(x, y, width, height);
@@ -269,13 +268,13 @@ static const CGFloat minWidth = 60;
 
 - (UIImageView *)clipperView {
     if (!_clipperView) {
-        CGFloat width = kScreenWidth;
-        CGFloat height = kScreenHeight - 64;
+        CGFloat width = [UIScreen mainScreen].bounds.size.width;
+        CGFloat height = [UIScreen mainScreen].bounds.size.height - 64;
         
         if (self.resultImgSize.width > self.resultImgSize.height) {
-            height = kScreenWidth / self.resultImgSize.width * self.resultImgSize.height;
+            height = [UIScreen mainScreen].bounds.size.width / self.resultImgSize.width * self.resultImgSize.height;
         } else {
-            width = kScreenHeight / self.resultImgSize.height * self.resultImgSize.width;
+            width = [UIScreen mainScreen].bounds.size.height / self.resultImgSize.height * self.resultImgSize.width;
         }
         
         CGFloat y = (self.frame.size.height - height) / 2;

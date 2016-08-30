@@ -15,12 +15,11 @@
 		269D67C61D649ACF00126A80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269D67C41D649ACF00126A80 /* LaunchScreen.storyboard */; };
 		269D67D11D649ACF00126A80 /* HKClipperDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 269D67D01D649ACF00126A80 /* HKClipperDemoTests.m */; };
 		269D67DC1D649ACF00126A80 /* HKClipperDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 269D67DB1D649ACF00126A80 /* HKClipperDemoUITests.m */; };
-		7789FC5E1D6588FE0059F63F /* HKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7789FC3F1D6588FE0059F63F /* HKViewController.m */; };
 		7789FC611D6588FE0059F63F /* HKImageClipperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7789FC491D6588FE0059F63F /* HKImageClipperViewController.m */; };
 		7789FC621D6588FE0059F63F /* HKClipperVeiw.m in Sources */ = {isa = PBXBuildFile; fileRef = 7789FC4C1D6588FE0059F63F /* HKClipperVeiw.m */; };
-		7789FC651D6588FE0059F63F /* UIBarButtonItem+Extends.m in Sources */ = {isa = PBXBuildFile; fileRef = 7789FC531D6588FE0059F63F /* UIBarButtonItem+Extends.m */; };
 		7789FC661D6588FE0059F63F /* UIImage+Extends.m in Sources */ = {isa = PBXBuildFile; fileRef = 7789FC551D6588FE0059F63F /* UIImage+Extends.m */; };
-		7789FC681D6588FE0059F63F /* UINavigationController+Extends.m in Sources */ = {isa = PBXBuildFile; fileRef = 7789FC591D6588FE0059F63F /* UINavigationController+Extends.m */; };
+		77E8F98B1D75853B00B2A7C7 /* HKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E8F98A1D75853B00B2A7C7 /* HKViewController.m */; };
+		77E8F98E1D75856700B2A7C7 /* UIBarButtonItem+Extends.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E8F98D1D75856700B2A7C7 /* UIBarButtonItem+Extends.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,20 +56,16 @@
 		269D67D71D649ACF00126A80 /* HKClipperDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HKClipperDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		269D67DB1D649ACF00126A80 /* HKClipperDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKClipperDemoUITests.m; sourceTree = "<group>"; };
 		269D67DD1D649ACF00126A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7789FC3E1D6588FE0059F63F /* HKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKViewController.h; sourceTree = "<group>"; };
-		7789FC3F1D6588FE0059F63F /* HKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKViewController.m; sourceTree = "<group>"; };
 		7789FC481D6588FE0059F63F /* HKImageClipperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKImageClipperViewController.h; sourceTree = "<group>"; };
 		7789FC491D6588FE0059F63F /* HKImageClipperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKImageClipperViewController.m; sourceTree = "<group>"; };
 		7789FC4B1D6588FE0059F63F /* HKClipperVeiw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKClipperVeiw.h; sourceTree = "<group>"; };
 		7789FC4C1D6588FE0059F63F /* HKClipperVeiw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKClipperVeiw.m; sourceTree = "<group>"; };
-		7789FC521D6588FE0059F63F /* UIBarButtonItem+Extends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extends.h"; sourceTree = "<group>"; };
-		7789FC531D6588FE0059F63F /* UIBarButtonItem+Extends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extends.m"; sourceTree = "<group>"; };
 		7789FC541D6588FE0059F63F /* UIImage+Extends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extends.h"; sourceTree = "<group>"; };
 		7789FC551D6588FE0059F63F /* UIImage+Extends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extends.m"; sourceTree = "<group>"; };
-		7789FC581D6588FE0059F63F /* UINavigationController+Extends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Extends.h"; sourceTree = "<group>"; };
-		7789FC591D6588FE0059F63F /* UINavigationController+Extends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Extends.m"; sourceTree = "<group>"; };
-		7789FC5B1D6588FE0059F63F /* HKModelMarco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKModelMarco.h; sourceTree = "<group>"; };
-		7789FC5C1D6588FE0059F63F /* HKViewMarco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKViewMarco.h; sourceTree = "<group>"; };
+		77E8F9891D75853B00B2A7C7 /* HKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKViewController.h; sourceTree = "<group>"; };
+		77E8F98A1D75853B00B2A7C7 /* HKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKViewController.m; sourceTree = "<group>"; };
+		77E8F98C1D75856700B2A7C7 /* UIBarButtonItem+Extends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extends.h"; sourceTree = "<group>"; };
+		77E8F98D1D75856700B2A7C7 /* UIBarButtonItem+Extends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extends.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,29 +159,11 @@
 		7789FC381D6588FE0059F63F /* General */ = {
 			isa = PBXGroup;
 			children = (
-				7789FC391D6588FE0059F63F /* CommonBase */,
+				77E8F9871D75853B00B2A7C7 /* CommonBase */,
 				7789FC401D6588FE0059F63F /* CustomUI */,
 				7789FC4D1D6588FE0059F63F /* Extends */,
-				7789FC5A1D6588FE0059F63F /* Marco */,
 			);
 			path = General;
-			sourceTree = "<group>";
-		};
-		7789FC391D6588FE0059F63F /* CommonBase */ = {
-			isa = PBXGroup;
-			children = (
-				7789FC3D1D6588FE0059F63F /* HKViewController */,
-			);
-			path = CommonBase;
-			sourceTree = "<group>";
-		};
-		7789FC3D1D6588FE0059F63F /* HKViewController */ = {
-			isa = PBXGroup;
-			children = (
-				7789FC3E1D6588FE0059F63F /* HKViewController.h */,
-				7789FC3F1D6588FE0059F63F /* HKViewController.m */,
-			);
-			path = HKViewController;
 			sourceTree = "<group>";
 		};
 		7789FC401D6588FE0059F63F /* CustomUI */ = {
@@ -219,23 +196,29 @@
 		7789FC4D1D6588FE0059F63F /* Extends */ = {
 			isa = PBXGroup;
 			children = (
-				7789FC521D6588FE0059F63F /* UIBarButtonItem+Extends.h */,
-				7789FC531D6588FE0059F63F /* UIBarButtonItem+Extends.m */,
 				7789FC541D6588FE0059F63F /* UIImage+Extends.h */,
+				77E8F98C1D75856700B2A7C7 /* UIBarButtonItem+Extends.h */,
+				77E8F98D1D75856700B2A7C7 /* UIBarButtonItem+Extends.m */,
 				7789FC551D6588FE0059F63F /* UIImage+Extends.m */,
-				7789FC581D6588FE0059F63F /* UINavigationController+Extends.h */,
-				7789FC591D6588FE0059F63F /* UINavigationController+Extends.m */,
 			);
 			path = Extends;
 			sourceTree = "<group>";
 		};
-		7789FC5A1D6588FE0059F63F /* Marco */ = {
+		77E8F9871D75853B00B2A7C7 /* CommonBase */ = {
 			isa = PBXGroup;
 			children = (
-				7789FC5B1D6588FE0059F63F /* HKModelMarco.h */,
-				7789FC5C1D6588FE0059F63F /* HKViewMarco.h */,
+				77E8F9881D75853B00B2A7C7 /* HKViewController */,
 			);
-			path = Marco;
+			path = CommonBase;
+			sourceTree = "<group>";
+		};
+		77E8F9881D75853B00B2A7C7 /* HKViewController */ = {
+			isa = PBXGroup;
+			children = (
+				77E8F9891D75853B00B2A7C7 /* HKViewController.h */,
+				77E8F98A1D75853B00B2A7C7 /* HKViewController.m */,
+			);
+			path = HKViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,15 +351,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7789FC651D6588FE0059F63F /* UIBarButtonItem+Extends.m in Sources */,
-				7789FC5E1D6588FE0059F63F /* HKViewController.m in Sources */,
+				77E8F98E1D75856700B2A7C7 /* UIBarButtonItem+Extends.m in Sources */,
 				7789FC621D6588FE0059F63F /* HKClipperVeiw.m in Sources */,
 				269D67BE1D649ACF00126A80 /* ViewController.m in Sources */,
 				269D67BB1D649ACF00126A80 /* AppDelegate.m in Sources */,
 				269D67B81D649ACF00126A80 /* main.m in Sources */,
 				7789FC611D6588FE0059F63F /* HKImageClipperViewController.m in Sources */,
+				77E8F98B1D75853B00B2A7C7 /* HKViewController.m in Sources */,
 				7789FC661D6588FE0059F63F /* UIImage+Extends.m in Sources */,
-				7789FC681D6588FE0059F63F /* UINavigationController+Extends.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

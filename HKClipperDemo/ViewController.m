@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "HKModelMarco.h"
 
 #import "HKImageClipperViewController.h"
 
@@ -39,12 +38,13 @@
         UIImage*image = [self turnImageWithInfo:info];
         HKImageClipperViewController *clipperVC = [[HKImageClipperViewController alloc]initWithBaseImg:image
                                                                                          resultImgSize:self.clippedImageView.frame.size clipperType:self.clipperType];
-        __weakSelf(self);
+        
+        __weak typeof(self)weakSelf = self;
         clipperVC.cancelClippedHandler = ^(){
             [picker dismissViewControllerAnimated:YES completion:nil];
         };
         clipperVC.successClippedHandler = ^(UIImage *clippedImage){
-            __strongSelf(weakSelf);
+            __strong typeof(self)strongSelf = weakSelf;
             strongSelf.clippedImageView.image = clippedImage;
             //            strongSelf.layerView.layer.contents =(__bridge id _Nullable)(clippedImage.CGImage);
             //            strongSelf.layerView.contentMode = UIViewContentModeScaleAspectFit;

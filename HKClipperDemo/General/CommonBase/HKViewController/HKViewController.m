@@ -7,7 +7,6 @@
 //
 
 #import "HKViewController.h"
-#import "HKViewMarco.h"
 #import "UIImage+Extends.h"
 #import "UIBarButtonItem+Extends.h"
 
@@ -57,7 +56,7 @@ static const int TITLE_BAR_HEIGHT = 44;
         self.leftBtn.contentEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
         [self.leftBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
         [self.leftBtn setTitle:title forState:UIControlStateNormal];
-        [self.leftBtn setTitleColor:color_black forState:UIControlStateNormal];
+        [self.leftBtn setTitleColor:[UIColor colorWithRed:0.118 green:0.133 blue:0.153 alpha:1.000] forState:UIControlStateNormal];
         [self.leftBtn.titleLabel setFont:[UIFont systemFontOfSize:16]];
         [self.leftBtn addTarget:self action:@selector(leftBtnTUI:) forControlEvents:UIControlEventTouchUpInside];
         self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.leftBtn];
@@ -71,7 +70,7 @@ static const int TITLE_BAR_HEIGHT = 44;
     if (!_rightBtn) {
         self.rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [self.rightBtn addTarget:self action:@selector(rightBtnTUI:) forControlEvents:UIControlEventTouchUpInside];
-        [self.rightBtn setTitleColor:color_black forState:UIControlStateNormal];
+        [self.rightBtn setTitleColor:[UIColor colorWithRed:0.118 green:0.133 blue:0.153 alpha:1.000] forState:UIControlStateNormal];
         self.rightBtn.layer.masksToBounds = YES;
         self.rightBtn.layer.cornerRadius = 8;
         [self.rightBtn.titleLabel setFont:[UIFont systemFontOfSize:16]];

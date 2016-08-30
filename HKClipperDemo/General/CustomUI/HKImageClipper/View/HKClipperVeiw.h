@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "HKViewMarco.h"
 
 typedef NS_ENUM (NSUInteger, ClipperType) {
     ClipperTypeImgMove,

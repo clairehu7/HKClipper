@@ -19,7 +19,7 @@
     self = [super init];
     if (self) {        
         self.clipperView = [[HKClipperVeiw alloc]init];
-        self.clipperView.frame = CGRectMake(0, 64, kScreenWidth, kScreenHeight - 64);
+        self.clipperView.frame = CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64);
         self.clipperView.resultImgSize = resultImgSize;
         //baseImg 的大小需依赖 resultImgSize 计算，所以 需在 resultImgSize 被赋值后才可赋值
         self.clipperView.baseImg = baseImg;
