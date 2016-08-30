@@ -7,7 +7,7 @@
 //
 
 #import "HKClipperVeiw.h"
-#import "UIImage+Extends.h"
+#import "UIImage+ClipperExtends.h"
 
 static const CGFloat minWidth = 60;
 @interface HKClipperVeiw()

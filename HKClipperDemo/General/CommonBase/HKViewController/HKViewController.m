@@ -7,7 +7,6 @@
 //
 
 #import "HKViewController.h"
-#import "UIImage+Extends.h"
 #import "UIBarButtonItem+Extends.h"
 
 static const int TITLE_BAR_HEIGHT = 44;
@@ -41,7 +40,7 @@ static const int TITLE_BAR_HEIGHT = 44;
 
 #pragma mark - Btn init
 - (void)creaBackBtnWithTitle:(NSString *)title {
-    UIImage *leftBarImage = [[UIImage imageNamed:@"nav_back_black"] imageWithTintColor:[UIColor grayColor] blendMode:kCGBlendModeDestinationIn];
+    UIImage *leftBarImage = [UIImage imageNamed:@"nav_back_black"];
     self.navigationItem.leftBarButtonItem =
         [UIBarButtonItem barItemWithTarget:self
                                     action:@selector(backBtnTUI:)

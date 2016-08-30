@@ -38,40 +38,6 @@
 
 #pragma mark - Size
 
-/**
- *  缩放图片
- *
- *  @param newSize   图片尺寸
- *  @param withScale 是否 * [UIScreen mainScreen].scale
- *
- *  @return 处理后的图片
- */
--(UIImage*)scaledToSize:(CGSize)newSize withScale:(BOOL)withScale {
-    
-    CGFloat scale = 1;
-    if (withScale) {
-        scale = [UIScreen mainScreen].scale;
-    }
-    newSize = (CGSize){newSize.width * scale, newSize.height * scale};
-    // Create a graphics image context
-    UIGraphicsBeginImageContextWithOptions(newSize, NO, 0);
-    //    UIGraphicsBeginImageContextWithOptions(newSize, NO, [UIScreen mainScreen].scale);
-    
-    // Tell the old image to draw in this new context, with the desired
-    // new size
-    [self drawInRect:(CGRect){CGPointZero, newSize}];
-    
-    // Get the new image from the context
-    UIImage* newImage = UIGraphicsGetImageFromCurrentImageContext();
-    
-    // End the context
-    UIGraphicsEndImageContext();
-    
-    // Return the new image.
-    return newImage;
-}
-
-
 -(UIImage*)getSubImage:(CGRect)rect {
     CGImageRef subImageRef = CGImageCreateWithImageInRect(self.CGImage, rect);
     CGRect smallBounds = CGRectMake(0, 0, CGImageGetWidth(subImageRef), CGImageGetHeight(subImageRef));

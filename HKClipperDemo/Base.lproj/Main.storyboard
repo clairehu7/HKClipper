@@ -17,13 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7dl-yK-UbR">
-                                <rect key="frame" x="40" y="220" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="X5d-M1-Wke"/>
-                                    <constraint firstAttribute="width" constant="240" id="qbZ-Bp-hAd"/>
-                                </constraints>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="keW-oC-E8d">
                                 <rect key="frame" x="56" y="86" width="208" height="96"/>
                                 <subviews>
@@ -90,12 +83,19 @@
                                     <constraint firstAttribute="width" constant="208" id="wvW-3B-Sdi"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7dl-yK-UbR">
+                                <rect key="frame" x="40" y="240" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="X5d-M1-Wke"/>
+                                    <constraint firstAttribute="width" constant="240" id="qbZ-Bp-hAd"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="keW-oC-E8d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="73k-Ko-Dfq"/>
                             <constraint firstItem="7dl-yK-UbR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OFg-Zv-3bI"/>
-                            <constraint firstItem="7dl-yK-UbR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="o36-7v-eZP"/>
+                            <constraint firstItem="7dl-yK-UbR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="20" id="o36-7v-eZP"/>
                             <constraint firstItem="keW-oC-E8d" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="sJf-EM-dRr"/>
                         </constraints>
                     </view>
