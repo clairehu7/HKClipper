@@ -93,7 +93,8 @@ Pod::Spec.new do |s|
 
 
   s.source_files  =
-"HKClipperDemo/General/CustomUI/HKImageClipper/View"
+"HKClipperDemo/General/CustomUI/HKClipperVeiw"
+
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
