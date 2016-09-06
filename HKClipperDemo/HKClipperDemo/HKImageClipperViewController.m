@@ -18,12 +18,12 @@
 - (instancetype)initWithBaseImg:(UIImage *)baseImg resultImgSize:(CGSize)resultImgSize clipperType:(ClipperType)type {
     self = [super init];
     if (self) {        
-        self.clipperView = [[HKClipperVeiw alloc]init];
-        self.clipperView.frame = CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64);
-        self.clipperView.resultImgSize = resultImgSize;
+        _clipperView = [[HKClipperVeiw alloc]init];
+        _clipperView.frame = CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64);
+        _clipperView.resultImgSize = resultImgSize;
         //baseImg 的大小需依赖 resultImgSize 计算，所以 需在 resultImgSize 被赋值后才可赋值
-        self.clipperView.baseImg = baseImg;
-        self.clipperView.type = type;
+        _clipperView.baseImg = baseImg;
+        _clipperView.type = type;
         [self.view addSubview:_clipperView];
     }
     return self;
