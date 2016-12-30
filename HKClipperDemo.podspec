@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "HKClipperDemo"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "裁剪照片的工具，裁剪尺寸可以自定义，可选择裁剪时移动图片或裁剪框"
 
   s.description  = <<-DESC
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author             = { "clairehu" => "471339423@qq.com" }
   s.platform     = :ios, "5.0"
-  s.source       = { :git => "https://github.com/clairehu7/HKClipperDemo.git", :tag => "0.0.3" }
+  s.source       = { :git => "https://github.com/clairehu7/HKClipperDemo.git", :tag => "0.0.4" }
   s.source_files  = "HKClipperDemo/HKClipperDemo/General/CustomUI", "HKClipperDemo/HKClipperDemo/General/CustomUI/**/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
 end
