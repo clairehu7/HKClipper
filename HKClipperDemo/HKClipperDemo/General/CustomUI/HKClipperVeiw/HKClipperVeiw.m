@@ -171,17 +171,17 @@ static const CGFloat minWidth = 60;
     
     CGFloat x = self.clipperView.frame.origin.x;
     CGFloat y = self.clipperView.frame.origin.y;
-    if (x < 0) {
-        x = 0;
+    if (x < self.baseImgView.frame.origin.x) {
+        x = self.baseImgView.frame.origin.x;
     }
     if(x  > [UIScreen mainScreen].bounds.size.width - width){
         x = [UIScreen mainScreen].bounds.size.width - width;
     }
-    if (y < 0) {
-        y = 0;
+    if (y < self.baseImgView.frame.origin.y) {
+        y = self.baseImgView.frame.origin.y;
     }
-    if(y > [UIScreen mainScreen].bounds.size.height - height - 64){
-        y =[UIScreen mainScreen].bounds.size.height - height - 64;
+    if(y > (self.baseImgView.frame.origin.y + self.baseImgView.frame.size.height - self.clipperView.frame.size.height)) {
+        y = self.baseImgView.frame.origin.y + self.baseImgView.frame.size.height - self.clipperView.frame.size.height;
     }
     
     self.clipperView.frame = CGRectMake(x, y, width, height);
@@ -271,7 +271,7 @@ static const CGFloat minWidth = 60;
         CGFloat width = [UIScreen mainScreen].bounds.size.width;
         CGFloat height = [UIScreen mainScreen].bounds.size.height - 64;
         
-        if (self.resultImgSize.width > self.resultImgSize.height) {
+        if (self.resultImgSize.width > (self.resultImgSize.height)/height *width) {
             height = [UIScreen mainScreen].bounds.size.width / self.resultImgSize.width * self.resultImgSize.height;
         } else {
             width = [UIScreen mainScreen].bounds.size.height / self.resultImgSize.height * self.resultImgSize.width;
