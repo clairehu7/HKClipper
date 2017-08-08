@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
   s.author       = { "clairehu" => "471339423@qq.com" }
   s.platform     = :ios, "5.0"
   s.source       = { :git => "https://github.com/clairehu7/HKClipper.git", :tag => "0.0.5" }
-  s.source_files  = "HKClipperDemo/HKClipperDemo/HKClipper/HKClipperVeiw", "HKClipperDemo/HKClipperDemo/HKClipper/HKClipperVeiw/**/*.{h,m}"
+  s.source_files  = "HKClipperDemo/HKClipperDemo/HKClipper/HKClipperView", "HKClipperDemo/HKClipperDemo/HKClipper/HKClipperView/**/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
 end
