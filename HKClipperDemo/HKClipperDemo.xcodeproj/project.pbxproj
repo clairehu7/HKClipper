@@ -15,6 +15,7 @@
 		269D67C61D649ACF00126A80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269D67C41D649ACF00126A80 /* LaunchScreen.storyboard */; };
 		269D67D11D649ACF00126A80 /* HKClipperDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 269D67D01D649ACF00126A80 /* HKClipperDemoTests.m */; };
 		269D67DC1D649ACF00126A80 /* HKClipperDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 269D67DB1D649ACF00126A80 /* HKClipperDemoUITests.m */; };
+		771247B91F39A0D60020B9F3 /* HKClipperHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 771247B81F39A0D60020B9F3 /* HKClipperHelper.m */; };
 		7789FC661D6588FE0059F63F /* UIImage+Extends.m in Sources */ = {isa = PBXBuildFile; fileRef = 7789FC551D6588FE0059F63F /* UIImage+Extends.m */; };
 		77E8F98B1D75853B00B2A7C7 /* HKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E8F98A1D75853B00B2A7C7 /* HKViewController.m */; };
 		77E8F98E1D75856700B2A7C7 /* UIBarButtonItem+Extends.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E8F98D1D75856700B2A7C7 /* UIBarButtonItem+Extends.m */; };
@@ -57,6 +58,8 @@
 		269D67D71D649ACF00126A80 /* HKClipperDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HKClipperDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		269D67DB1D649ACF00126A80 /* HKClipperDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKClipperDemoUITests.m; sourceTree = "<group>"; };
 		269D67DD1D649ACF00126A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		771247B71F39A0D60020B9F3 /* HKClipperHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKClipperHelper.h; sourceTree = "<group>"; };
+		771247B81F39A0D60020B9F3 /* HKClipperHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKClipperHelper.m; sourceTree = "<group>"; };
 		7789FC541D6588FE0059F63F /* UIImage+Extends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extends.h"; sourceTree = "<group>"; };
 		7789FC551D6588FE0059F63F /* UIImage+Extends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extends.m"; sourceTree = "<group>"; };
 		77E8F9891D75853B00B2A7C7 /* HKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKViewController.h; sourceTree = "<group>"; };
@@ -122,6 +125,8 @@
 				7789FC381D6588FE0059F63F /* General */,
 				269D67BC1D649ACF00126A80 /* ViewController.h */,
 				269D67BD1D649ACF00126A80 /* ViewController.m */,
+				771247B71F39A0D60020B9F3 /* HKClipperHelper.h */,
+				771247B81F39A0D60020B9F3 /* HKClipperHelper.m */,
 				77E8F9921D75893200B2A7C7 /* HKImageClipperViewController.h */,
 				77E8F9931D75893200B2A7C7 /* HKImageClipperViewController.m */,
 				269D67BF1D649ACF00126A80 /* Main.storyboard */,
@@ -280,11 +285,13 @@
 		269D67AB1D649ACE00126A80 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = hukaiyin;
 				TargetAttributes = {
 					269D67B21D649ACF00126A80 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9J4879R6KM;
+						ProvisioningStyle = Automatic;
 					};
 					269D67CB1D649ACF00126A80 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -352,6 +359,7 @@
 				269D67BE1D649ACF00126A80 /* ViewController.m in Sources */,
 				77E8F99B1D75895E00B2A7C7 /* UIImage+ClipperExtends.m in Sources */,
 				269D67BB1D649ACF00126A80 /* AppDelegate.m in Sources */,
+				771247B91F39A0D60020B9F3 /* HKClipperHelper.m in Sources */,
 				77E8F9941D75893200B2A7C7 /* HKImageClipperViewController.m in Sources */,
 				269D67B81D649ACF00126A80 /* main.m in Sources */,
 				77E8F98B1D75853B00B2A7C7 /* HKViewController.m in Sources */,
@@ -425,8 +433,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -469,8 +479,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -497,11 +509,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9J4879R6KM;
 				INFOPLIST_FILE = HKClipperDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.practice.HKClipperDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -509,11 +524,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9J4879R6KM;
 				INFOPLIST_FILE = HKClipperDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.practice.HKClipperDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

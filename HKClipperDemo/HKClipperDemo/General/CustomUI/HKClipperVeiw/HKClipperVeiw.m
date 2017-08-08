@@ -13,7 +13,7 @@ static const CGFloat minWidth = 60;
 @interface HKClipperVeiw()
 @property (nonatomic, strong) UIImageView *clipperView;
 @property (nonatomic, strong) UIImageView *baseImgView;
-
+@property (nonatomic, strong) CAShapeLayer *fillLayer;
 @end
 
 @implementation HKClipperVeiw {
@@ -112,6 +112,7 @@ static const CGFloat minWidth = 60;
             }
         } break;
     }
+    [self correctFillLayer];
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -126,6 +127,8 @@ static const CGFloat minWidth = 60;
         }
     }
 }
+
+#pragma mark - Correct
 
 - (void)correctBackImgView {
     CGFloat x = self.baseImgView.frame.origin.x;
@@ -185,6 +188,26 @@ static const CGFloat minWidth = 60;
     }
     
     self.clipperView.frame = CGRectMake(x, y, width, height);
+    [self correctFillLayer];
+}
+
+- (void)correctFillLayer {
+    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:self.bounds cornerRadius:0];
+    UIBezierPath *circlePath = [UIBezierPath bezierPathWithRoundedRect:_clipperView.frame cornerRadius:0];
+    [path appendPath:circlePath];
+    [path setUsesEvenOddFillRule:YES];
+    self.fillLayer.path = path.CGPath;
+}
+
+- (CAShapeLayer *)fillLayer {
+    if (!_fillLayer) {
+        _fillLayer = [CAShapeLayer layer];
+        _fillLayer.fillRule = kCAFillRuleEvenOdd;
+        _fillLayer.fillColor = [UIColor blackColor].CGColor;
+        _fillLayer.opacity =0.5;
+        [self.layer addSublayer:_fillLayer];
+    }
+    return _fillLayer;
 }
 
 #pragma mark - Utilities
@@ -282,10 +305,11 @@ static const CGFloat minWidth = 60;
         _clipperView = [[UIImageView alloc]initWithFrame:CGRectMake(x, y, width, height)];
         
 //        _clipperView.image = [UIImage imageNamed:@"img_clipper_border"];        
-        _clipperView.layer.borderColor = [UIColor colorWithRed:0.369 green:0.882 blue:0.502 alpha:1.000].CGColor;
+        _clipperView.layer.borderColor = [UIColor whiteColor].CGColor;
         _clipperView.layer.borderWidth = 2;
         
         [self addSubview:_clipperView];
+        [self correctFillLayer];
     }
     return _clipperView ;
 }
