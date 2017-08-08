@@ -15,6 +15,7 @@
 @implementation HKImageClipperViewController
 
 #pragma mark - Life Cycle
+
 - (instancetype)initWithBaseImg:(UIImage *)baseImg resultImgSize:(CGSize)resultImgSize clipperType:(ClipperType)type {
     self = [super init];
     if (self) {        

@@ -19,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+
     [self configHelper];
 }
 
@@ -30,12 +31,12 @@
 #pragma mark - HKClipperHelper
 
 - (void)configHelper {
-    ClipperHelper.nav = self.navigationController;
-    ClipperHelper.clippedImgSize = self.clippedImageView.frame.size;
+    [HKClipperHelper shareManager].nav = self.navigationController;
+    [HKClipperHelper shareManager].clippedImgSize = self.clippedImageView.frame.size;
 
     __weak typeof(self)weakSelf = self;
 
-    ClipperHelper.clippedImageHandler = ^(UIImage *img) {
+    [HKClipperHelper shareManager].clippedImageHandler = ^(UIImage *img) {
         weakSelf.clippedImageView.image = img;
     };
 }
@@ -54,10 +55,10 @@
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
     dispatch_after(0., dispatch_get_main_queue(), ^{
         if (buttonIndex == 0) {
-            [ClipperHelper photoWithSourceType:UIImagePickerControllerSourceTypeCamera];
+            [[HKClipperHelper shareManager] photoWithSourceType:UIImagePickerControllerSourceTypeCamera];
         }
         else if(buttonIndex == 1) {
-            [ClipperHelper photoWithSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+            [[HKClipperHelper shareManager] photoWithSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
         }
     });
 }
@@ -65,28 +66,28 @@
 #pragma mark - Btn Methods
 
 - (IBAction)imageTUI:(UIButton *)sender {
-    ClipperHelper.clipperType = ClipperTypeImgMove;
-    ClipperHelper.systemEditing = NO;
-    ClipperHelper.isSystemType = NO;
+    [HKClipperHelper shareManager].clipperType = ClipperTypeImgMove;
+    [HKClipperHelper shareManager].systemEditing = NO;
+    [HKClipperHelper shareManager].isSystemType = NO;
     [self takePhoto];
 }
 
 - (IBAction)clipperTUI:(UIButton *)sender {
-    ClipperHelper.clipperType = ClipperTypeImgStay;
-    ClipperHelper.systemEditing = NO;
-    ClipperHelper.isSystemType = NO;
+    [HKClipperHelper shareManager].clipperType = ClipperTypeImgStay;
+    [HKClipperHelper shareManager].systemEditing = NO;
+    [HKClipperHelper shareManager].isSystemType = NO;
     [self takePhoto];
 }
 
 - (IBAction)systemDontClipTUI:(UIButton *)sender {
-    ClipperHelper.systemEditing = NO;
-    ClipperHelper.isSystemType = YES;
+    [HKClipperHelper shareManager].systemEditing = NO;
+    [HKClipperHelper shareManager].isSystemType = YES;
     [self takePhoto];
 }
 
 - (IBAction)systemTUI:(UIButton *)sender {
-    ClipperHelper.systemEditing = YES;
-    ClipperHelper.isSystemType = YES;
+    [HKClipperHelper shareManager].systemEditing = YES;
+    [HKClipperHelper shareManager].isSystemType = YES;
     [self takePhoto];
 }
 

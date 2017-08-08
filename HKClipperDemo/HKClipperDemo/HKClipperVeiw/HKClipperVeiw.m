@@ -7,9 +7,11 @@
 //
 
 #import "HKClipperVeiw.h"
+
 #import "UIImage+ClipperExtends.h"
 
 static const CGFloat minWidth = 60;
+
 @interface HKClipperVeiw()
 @property (nonatomic, strong) UIImageView *clipperView;
 @property (nonatomic, strong) UIImageView *baseImgView;
@@ -42,6 +44,7 @@ static const CGFloat minWidth = 60;
 }
 
 #pragma mark - Public
+
 - (UIImage *)clipImg {
     
     CGFloat scale = [UIScreen mainScreen].scale * self.baseImgView.image.size.width/self.baseImgView.frame.size.width;
@@ -58,6 +61,7 @@ static const CGFloat minWidth = 60;
 }
 
 #pragma mark - Touches
+
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     NSSet *allTouches = [event allTouches];
     switch ([allTouches count]) {
@@ -199,18 +203,8 @@ static const CGFloat minWidth = 60;
     self.fillLayer.path = path.CGPath;
 }
 
-- (CAShapeLayer *)fillLayer {
-    if (!_fillLayer) {
-        _fillLayer = [CAShapeLayer layer];
-        _fillLayer.fillRule = kCAFillRuleEvenOdd;
-        _fillLayer.fillColor = [UIColor blackColor].CGColor;
-        _fillLayer.opacity =0.5;
-        [self.layer addSublayer:_fillLayer];
-    }
-    return _fillLayer;
-}
-
 #pragma mark - Utilities
+
 //根据两点缩放View
 - (void)scaleView:(UIView *)view touches:(NSArray *)touches {
     CGPoint touch1 = [[touches objectAtIndex:0] locationInView:self];
@@ -249,7 +243,7 @@ static const CGFloat minWidth = 60;
     return sqrtf(x * x + y * y);
 }
 
-#pragma mark - Getters & Setters
+#pragma mark - Setters & Getters
 - (void)setBaseImg:(UIImage *)baseImg {
     _baseImg = baseImg;
     
@@ -312,6 +306,17 @@ static const CGFloat minWidth = 60;
         [self correctFillLayer];
     }
     return _clipperView ;
+}
+
+- (CAShapeLayer *)fillLayer {
+    if (!_fillLayer) {
+        _fillLayer = [CAShapeLayer layer];
+        _fillLayer.fillRule = kCAFillRuleEvenOdd;
+        _fillLayer.fillColor = [UIColor blackColor].CGColor;
+        _fillLayer.opacity =0.5;
+        [self.layer addSublayer:_fillLayer];
+    }
+    return _fillLayer;
 }
 
 @end

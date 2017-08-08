@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+
 #import "HKImageClipperViewController.h"
+
 #define ClipperHelper [HKClipperHelper shareManager]
 
 @interface HKClipperHelper : NSObject

@@ -15,13 +15,13 @@
 		269D67C61D649ACF00126A80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269D67C41D649ACF00126A80 /* LaunchScreen.storyboard */; };
 		269D67D11D649ACF00126A80 /* HKClipperDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 269D67D01D649ACF00126A80 /* HKClipperDemoTests.m */; };
 		269D67DC1D649ACF00126A80 /* HKClipperDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 269D67DB1D649ACF00126A80 /* HKClipperDemoUITests.m */; };
-		771247B91F39A0D60020B9F3 /* HKClipperHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 771247B81F39A0D60020B9F3 /* HKClipperHelper.m */; };
 		7789FC661D6588FE0059F63F /* UIImage+Extends.m in Sources */ = {isa = PBXBuildFile; fileRef = 7789FC551D6588FE0059F63F /* UIImage+Extends.m */; };
+		779C427A1F39B646002E68D5 /* HKClipperHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 779C42731F39B646002E68D5 /* HKClipperHelper.m */; };
+		779C427B1F39B646002E68D5 /* HKClipperVeiw.m in Sources */ = {isa = PBXBuildFile; fileRef = 779C42751F39B646002E68D5 /* HKClipperVeiw.m */; };
+		779C427C1F39B646002E68D5 /* HKImageClipperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779C42771F39B646002E68D5 /* HKImageClipperViewController.m */; };
+		779C427D1F39B646002E68D5 /* UIImage+ClipperExtends.m in Sources */ = {isa = PBXBuildFile; fileRef = 779C42791F39B646002E68D5 /* UIImage+ClipperExtends.m */; };
 		77E8F98B1D75853B00B2A7C7 /* HKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E8F98A1D75853B00B2A7C7 /* HKViewController.m */; };
 		77E8F98E1D75856700B2A7C7 /* UIBarButtonItem+Extends.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E8F98D1D75856700B2A7C7 /* UIBarButtonItem+Extends.m */; };
-		77E8F9941D75893200B2A7C7 /* HKImageClipperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E8F9931D75893200B2A7C7 /* HKImageClipperViewController.m */; };
-		77E8F99A1D75895E00B2A7C7 /* HKClipperVeiw.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E8F9971D75895E00B2A7C7 /* HKClipperVeiw.m */; };
-		77E8F99B1D75895E00B2A7C7 /* UIImage+ClipperExtends.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E8F9991D75895E00B2A7C7 /* UIImage+ClipperExtends.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,20 +58,20 @@
 		269D67D71D649ACF00126A80 /* HKClipperDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HKClipperDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		269D67DB1D649ACF00126A80 /* HKClipperDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKClipperDemoUITests.m; sourceTree = "<group>"; };
 		269D67DD1D649ACF00126A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		771247B71F39A0D60020B9F3 /* HKClipperHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKClipperHelper.h; sourceTree = "<group>"; };
-		771247B81F39A0D60020B9F3 /* HKClipperHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKClipperHelper.m; sourceTree = "<group>"; };
 		7789FC541D6588FE0059F63F /* UIImage+Extends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extends.h"; sourceTree = "<group>"; };
 		7789FC551D6588FE0059F63F /* UIImage+Extends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extends.m"; sourceTree = "<group>"; };
+		779C42721F39B646002E68D5 /* HKClipperHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKClipperHelper.h; sourceTree = "<group>"; };
+		779C42731F39B646002E68D5 /* HKClipperHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKClipperHelper.m; sourceTree = "<group>"; };
+		779C42741F39B646002E68D5 /* HKClipperVeiw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKClipperVeiw.h; sourceTree = "<group>"; };
+		779C42751F39B646002E68D5 /* HKClipperVeiw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKClipperVeiw.m; sourceTree = "<group>"; };
+		779C42761F39B646002E68D5 /* HKImageClipperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKImageClipperViewController.h; sourceTree = "<group>"; };
+		779C42771F39B646002E68D5 /* HKImageClipperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKImageClipperViewController.m; sourceTree = "<group>"; };
+		779C42781F39B646002E68D5 /* UIImage+ClipperExtends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ClipperExtends.h"; sourceTree = "<group>"; };
+		779C42791F39B646002E68D5 /* UIImage+ClipperExtends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ClipperExtends.m"; sourceTree = "<group>"; };
 		77E8F9891D75853B00B2A7C7 /* HKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKViewController.h; sourceTree = "<group>"; };
 		77E8F98A1D75853B00B2A7C7 /* HKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKViewController.m; sourceTree = "<group>"; };
 		77E8F98C1D75856700B2A7C7 /* UIBarButtonItem+Extends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extends.h"; sourceTree = "<group>"; };
 		77E8F98D1D75856700B2A7C7 /* UIBarButtonItem+Extends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extends.m"; sourceTree = "<group>"; };
-		77E8F9921D75893200B2A7C7 /* HKImageClipperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKImageClipperViewController.h; sourceTree = "<group>"; };
-		77E8F9931D75893200B2A7C7 /* HKImageClipperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKImageClipperViewController.m; sourceTree = "<group>"; };
-		77E8F9961D75895E00B2A7C7 /* HKClipperVeiw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKClipperVeiw.h; sourceTree = "<group>"; };
-		77E8F9971D75895E00B2A7C7 /* HKClipperVeiw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKClipperVeiw.m; sourceTree = "<group>"; };
-		77E8F9981D75895E00B2A7C7 /* UIImage+ClipperExtends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ClipperExtends.h"; sourceTree = "<group>"; };
-		77E8F9991D75895E00B2A7C7 /* UIImage+ClipperExtends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ClipperExtends.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,14 +122,10 @@
 		269D67B51D649ACF00126A80 /* HKClipperDemo */ = {
 			isa = PBXGroup;
 			children = (
-				7789FC381D6588FE0059F63F /* General */,
+				779C42711F39B646002E68D5 /* HKClipperVeiw */,
 				269D67BC1D649ACF00126A80 /* ViewController.h */,
 				269D67BD1D649ACF00126A80 /* ViewController.m */,
-				771247B71F39A0D60020B9F3 /* HKClipperHelper.h */,
-				771247B81F39A0D60020B9F3 /* HKClipperHelper.m */,
-				77E8F9921D75893200B2A7C7 /* HKImageClipperViewController.h */,
-				77E8F9931D75893200B2A7C7 /* HKImageClipperViewController.m */,
-				269D67BF1D649ACF00126A80 /* Main.storyboard */,
+				7789FC381D6588FE0059F63F /* General */,
 				269D67B61D649ACF00126A80 /* Supporting Files */,
 			);
 			path = HKClipperDemo;
@@ -138,6 +134,7 @@
 		269D67B61D649ACF00126A80 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				269D67BF1D649ACF00126A80 /* Main.storyboard */,
 				269D67B91D649ACF00126A80 /* AppDelegate.h */,
 				269D67BA1D649ACF00126A80 /* AppDelegate.m */,
 				269D67C21D649ACF00126A80 /* Assets.xcassets */,
@@ -170,18 +167,9 @@
 			isa = PBXGroup;
 			children = (
 				77E8F9871D75853B00B2A7C7 /* CommonBase */,
-				7789FC401D6588FE0059F63F /* CustomUI */,
 				7789FC4D1D6588FE0059F63F /* Extends */,
 			);
 			path = General;
-			sourceTree = "<group>";
-		};
-		7789FC401D6588FE0059F63F /* CustomUI */ = {
-			isa = PBXGroup;
-			children = (
-				77E8F9951D75895E00B2A7C7 /* HKClipperVeiw */,
-			);
-			path = CustomUI;
 			sourceTree = "<group>";
 		};
 		7789FC4D1D6588FE0059F63F /* Extends */ = {
@@ -193,6 +181,21 @@
 				77E8F98D1D75856700B2A7C7 /* UIBarButtonItem+Extends.m */,
 			);
 			path = Extends;
+			sourceTree = "<group>";
+		};
+		779C42711F39B646002E68D5 /* HKClipperVeiw */ = {
+			isa = PBXGroup;
+			children = (
+				779C42741F39B646002E68D5 /* HKClipperVeiw.h */,
+				779C42751F39B646002E68D5 /* HKClipperVeiw.m */,
+				779C42721F39B646002E68D5 /* HKClipperHelper.h */,
+				779C42731F39B646002E68D5 /* HKClipperHelper.m */,
+				779C42761F39B646002E68D5 /* HKImageClipperViewController.h */,
+				779C42771F39B646002E68D5 /* HKImageClipperViewController.m */,
+				779C42781F39B646002E68D5 /* UIImage+ClipperExtends.h */,
+				779C42791F39B646002E68D5 /* UIImage+ClipperExtends.m */,
+			);
+			path = HKClipperVeiw;
 			sourceTree = "<group>";
 		};
 		77E8F9871D75853B00B2A7C7 /* CommonBase */ = {
@@ -210,17 +213,6 @@
 				77E8F98A1D75853B00B2A7C7 /* HKViewController.m */,
 			);
 			path = HKViewController;
-			sourceTree = "<group>";
-		};
-		77E8F9951D75895E00B2A7C7 /* HKClipperVeiw */ = {
-			isa = PBXGroup;
-			children = (
-				77E8F9961D75895E00B2A7C7 /* HKClipperVeiw.h */,
-				77E8F9971D75895E00B2A7C7 /* HKClipperVeiw.m */,
-				77E8F9981D75895E00B2A7C7 /* UIImage+ClipperExtends.h */,
-				77E8F9991D75895E00B2A7C7 /* UIImage+ClipperExtends.m */,
-			);
-			path = HKClipperVeiw;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,14 +349,14 @@
 			files = (
 				77E8F98E1D75856700B2A7C7 /* UIBarButtonItem+Extends.m in Sources */,
 				269D67BE1D649ACF00126A80 /* ViewController.m in Sources */,
-				77E8F99B1D75895E00B2A7C7 /* UIImage+ClipperExtends.m in Sources */,
 				269D67BB1D649ACF00126A80 /* AppDelegate.m in Sources */,
-				771247B91F39A0D60020B9F3 /* HKClipperHelper.m in Sources */,
-				77E8F9941D75893200B2A7C7 /* HKImageClipperViewController.m in Sources */,
+				779C427D1F39B646002E68D5 /* UIImage+ClipperExtends.m in Sources */,
+				779C427C1F39B646002E68D5 /* HKImageClipperViewController.m in Sources */,
 				269D67B81D649ACF00126A80 /* main.m in Sources */,
 				77E8F98B1D75853B00B2A7C7 /* HKViewController.m in Sources */,
+				779C427A1F39B646002E68D5 /* HKClipperHelper.m in Sources */,
 				7789FC661D6588FE0059F63F /* UIImage+Extends.m in Sources */,
-				77E8F99A1D75895E00B2A7C7 /* HKClipperVeiw.m in Sources */,
+				779C427B1F39B646002E68D5 /* HKClipperVeiw.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

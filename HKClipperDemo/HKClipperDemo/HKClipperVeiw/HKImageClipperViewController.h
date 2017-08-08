@@ -17,4 +17,5 @@
 
 @property (nonatomic, copy) void(^cancelClippedHandler)(void);
 @property (nonatomic, copy) void(^successClippedHandler)(UIImage *clippedImage);
+
 @end
