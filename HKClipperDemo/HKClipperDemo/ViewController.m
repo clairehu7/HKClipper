@@ -20,7 +20,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
-    [self configHelper];
+    __weak typeof(self)weakSelf = self;
+
+    [self configHelperWith:^(UIImage *img) {
+        weakSelf.clippedImageView.image = img;
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,15 +34,10 @@
 
 #pragma mark - HKClipperHelper
 
-- (void)configHelper {
+- (void)configHelperWith:(void(^)(UIImage *img))handler {
     [HKClipperHelper shareManager].nav = self.navigationController;
     [HKClipperHelper shareManager].clippedImgSize = self.clippedImageView.frame.size;
-
-    __weak typeof(self)weakSelf = self;
-
-    [HKClipperHelper shareManager].clippedImageHandler = ^(UIImage *img) {
-        weakSelf.clippedImageView.image = img;
-    };
+    [HKClipperHelper shareManager].clippedImageHandler = handler;
 }
 
 #pragma mark - UIActionSheet
