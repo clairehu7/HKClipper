@@ -22,7 +22,9 @@
 
     __weak typeof(self)weakSelf = self;
 
-    [self configHelperWith:^(UIImage *img) {
+    [self configHelperWithNav:self.navigationController
+                      imgSize:self.clippedImageView.frame.size
+                   imgHandler:^(UIImage *img) {
         weakSelf.clippedImageView.image = img;
     }];
 }
@@ -34,9 +36,11 @@
 
 #pragma mark - HKClipperHelper
 
-- (void)configHelperWith:(void(^)(UIImage *img))handler {
-    [HKClipperHelper shareManager].nav = self.navigationController;
-    [HKClipperHelper shareManager].clippedImgSize = self.clippedImageView.frame.size;
+- (void)configHelperWithNav:(UINavigationController *)nav
+                    imgSize:(CGSize)size
+                 imgHandler:(void(^)(UIImage *img))handler {
+    [HKClipperHelper shareManager].nav = nav;
+    [HKClipperHelper shareManager].clippedImgSize = size;
     [HKClipperHelper shareManager].clippedImageHandler = handler;
 }
 
