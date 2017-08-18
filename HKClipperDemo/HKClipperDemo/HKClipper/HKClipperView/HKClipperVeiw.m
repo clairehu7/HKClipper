@@ -285,28 +285,31 @@ static const CGFloat minWidth = 60;
 
 - (UIImageView *)clipperView {
     if (!_clipperView) {
-        CGFloat width = [UIScreen mainScreen].bounds.size.width;
-        CGFloat height = [UIScreen mainScreen].bounds.size.height - 64;
-        
+        CGFloat kscWidth = [UIScreen mainScreen].bounds.size.width;
+        CGFloat kscHeight = [UIScreen mainScreen].bounds.size.height - 64;
+        CGFloat width = kscWidth;
+        CGFloat height = kscHeight;
+
         if (self.resultImgSize.width > (self.resultImgSize.height)/height *width) {
             height = [UIScreen mainScreen].bounds.size.width / self.resultImgSize.width * self.resultImgSize.height;
         } else {
             width = [UIScreen mainScreen].bounds.size.height / self.resultImgSize.height * self.resultImgSize.width;
         }
-        
-        CGFloat y = (self.frame.size.height - height) / 2;
-        CGFloat x = (self.frame.size.width - width) / 2;
+
+        CGFloat y = (kscHeight - height) / 2;
+        CGFloat x = (kscWidth - width) / 2;
         _clipperView = [[UIImageView alloc]initWithFrame:CGRectMake(x, y, width, height)];
-        
-//        _clipperView.image = [UIImage imageNamed:@"img_clipper_border"];        
+
+        //        _clipperView.image = [UIImage imageNamed:@"img_clipper_border"];
         _clipperView.layer.borderColor = [UIColor whiteColor].CGColor;
         _clipperView.layer.borderWidth = 2;
-        
+
         [self addSubview:_clipperView];
         [self correctFillLayer];
     }
     return _clipperView ;
 }
+
 
 - (CAShapeLayer *)fillLayer {
     if (!_fillLayer) {
